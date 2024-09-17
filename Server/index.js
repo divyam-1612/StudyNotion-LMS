@@ -42,7 +42,6 @@ app.use("/api/v1/payment", paymentRoutes)
 app.use("/api/v1/course", courseRoutes)
 
 app.get("/", (req,res) => {
-    <div>hi this is divyam  </div>
     return res.json({
         success: true,
         message: "your server is running...."
