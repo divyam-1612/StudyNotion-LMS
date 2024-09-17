@@ -50,7 +50,7 @@ exports.sendOTP = async (req, res) => {
     const otpPayload = {email , otp}
 
     const otpBody = await OTP.create(otpPayload);
-    console.log(otpBody)
+    console.log("otp sent to divyam")
     return res.json({
         success: true,
         message: 'otp sent',
